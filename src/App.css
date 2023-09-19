@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab&display=swap");
+
+.canvas{
+    touch-action: auto !important;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: #e9eeeefd;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+@media (min-width:300px) and ( max-width:599px){
+  *{font-size: 16px;}
+}
+@media (min-width:599px) and ( max-width:760px){
+  *{font-size: 15px;}
+}
+@media (min-width:761px) and ( max-width:995px){
+  *{font-size: 18px;}
+}
+@media (min-width:996px) and ( max-width:1200px){
+  *{font-size: 18px;}
+}
+
+.titles{
+ display: flex;
+ align-content: center;
+ justify-content: space-around;
+ position: absolute;
+ top: 1rem;
+ margin-left: 10%;
+ font-family: "Roboto Slab";
+ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+ font-size: 1.5rem;
+ color: #333333;
+ z-index: 999;
+}
+
+.github_logo{
+  width: 2rem;
+  margin-left: 1rem;
+  margin-top: .01rem;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+.container-3d{
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.title_projects{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 1rem;
+  gap: 1rem;
+  margin-left: 60%;
+  font-family: "Roboto Slab";
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  color: #333333;
+  z-index: 999;
+  opacity: 0;
+ }
+
+ .link_project{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333333;
+ }
+
+ .github_logo_p{
+  width: 2rem;
+  margin-left: 1rem;
+  padding-top: .03rem;
+}
+
+@media (min-width:330px) and ( max-width:370px){
+  .github_logo{
+    width: 1.4rem;
+  }
+  .title_projects{
+    margin-left: 10%;
+    gap: 0rem;
+    padding-top: 2rem;
+  }
+  .github_logo_p{
+    width: 1.4rem;
+  }
+}
+
+@media (min-width:371px) and ( max-width:599px){
+  .github_logo{
+    width: 1.4rem;
+  }
+  .title_projects{
+    margin-left: 10%;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+  .github_logo_p{
+    width: 1.4rem;
+  }
+  
+}
+@media (min-width:599px) and ( max-width:759px){
+  .github_logo{
+    width: 1.6rem;
+  }
+  .title_projects{
+    margin-left: 10%;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+  .github_logo_p{
+    width: 1.6rem;
+  }
+  
+}
+@media (min-width:760px) and ( max-width:995px){
+  .github_logo{
+    width: 1.4rem;
+  }
+  .title_projects{
+    margin-left: 60%;
+  }
+  .github_logo_p{
+    width: 1.4rem;
+  }
+}
+@media (min-width:996px) and ( max-width:1200px){
+  .github_logo{
+    width: 1.5rem;
+  }
+  .github_logo_p{
+    width: 1.5rem;
+  }
+  
+}
+
+/* Hidden scroll bar
+.canvas div div::-webkit-scrollbar{
+  display:none}
+.canvas div div {
+  -ms-overflow-style:none;
+  scrollbar-width:none;}
+*/
+
+
+/* Labels */
+.labels_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.labels_wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Labels cards */
+.label_card {
+  max-width: 500px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+@media (min-width:300px) and ( max-width:599px){
+  .label_card{
+    max-width: 100%;
+    gap: 1rem;
+    padding-top: 0rem;
+    padding-left: 8rem;
+    top: 18rem;
+    flex-direction: row;
+  }
+
+}
+@media (min-width:599px) and ( max-width:760px){
+  .label_card{
+    max-width: 100%;
+    gap: 1rem;
+    padding-top: 0rem;
+    padding-left: 8rem;
+    top: 18rem;
+    flex-direction: row;
+  }
+}
+@media (min-width:761px) and ( max-width:995px){
+  .label_card{
+    max-width: 100%;
+    gap: 1rem;
+    padding-top: 0rem;
+    padding-left: 8rem;
+    top: 18rem;
+    flex-direction: row;
+  }
+}
+@media (min-width:996px) and ( max-width:1200px){
+   .label_card{
+    top: 21rem;
+   }
+}
+
+
+
+.label_card--hidden {
+  opacity: 0;
+}
+
+.label_card ul {
+  list-style: none;
+}
+
+/* Text Styles */
+.text_header {
+  font-family: "Roboto Slab";
+  font-size: 4rem;
+  color: #333333;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  line-height: 120px;
+  margin-left: -10px;
+}
+
+.text_subheader {
+  font-family: "Roboto Slab";
+  font-size: 1.8rem;
+  color: #fff;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+}
+
+.text_body {
+  font-family: "Roboto Slab";
+  font-size: 1.3rem;
+  color: #333333;
+  line-height: 30px;
+}
+
+.text_item_des {
+  display: flex;
+  padding: 0.6rem 2rem;
+  align-items: center;
+  z-index: 999;
+}
+.text_item_des_border_top {
+  border-top: 1px solid  transparent;
+}
+.text_item_des_border_bottom {
+  border-bottom: 1px solid transparent;
+}
+
+@media (min-width:300px) and ( max-width:599px){
+  .card_secc_one{
+    min-width: 180px;
+  }
+  .text_header{
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .text_subheader{
+    padding-top: 1rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  .text_body{
+    font-size: 1rem;
+  }
+  .text_item_des {
+    padding: 0rem 0rem;
+  }
+}
+@media (min-width:599px) and ( max-width:760px){
+  .card_secc_one{
+    min-width: 180px;
+  }
+  .text_header{
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .text_subheader{
+    padding-top: 1rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  .text_body{
+    font-size: 1rem;
+  }
+  .text_item_des {
+    padding: 0rem 0rem;
+  }
+
+}
+@media (min-width:761px) and ( max-width:995px){
+  .card_secc_one{
+    min-width: 180px;
+  }
+  .text_header{
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .text_subheader{
+    padding-top: 1rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  .text_body{
+    font-size: 1rem;
+  }
+  .text_item_des {
+    padding: 0rem 0rem;
+  }
+}
+@media (min-width:996px) and ( max-width:1200px){
+  .text_header{
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+
+}
+
+.canvas div div::-webkit-scrollbar {
+  display: none;
+}
+.canvas div div {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Experiencia*/
+/* Labels */
+.labels_container_exp{
+  position: flex;
+  padding-top: 15rem;
+  width: 100%;
+}
+
+.labels_wrapper_exp{
+  position: relative;
+}
+
+.label_card_exp {
+  max-width: 30rem;
+  padding-left: 3rem;
+  padding-right: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.label_card_exp--hidden {
+  opacity: 0;
+}
+
+.label_card_exp ul {
+  list-style: none;
+}
+
+.text_header_exp {
+  font-family: "Roboto Slab";
+  font-size: 2.5rem;
+  color: #e9eeeefd;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  line-height: 4rem;
+  margin-left: -10px;
+}
+
+.text_subheader_exp {
+  font-family: "Roboto Slab";
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.text_body_exp {
+  font-family: "Roboto Slab";
+  font-size: 1rem;
+  color: #e9eeeefd;
+  line-height: 2rem;
+}
+
+.text_item_des_exp {
+  padding: 0rem 0rem;
+}
+.text_item_des_border_top_exp {
+  border-top: 1px solid  transparent;
+}
+.text_item_des_border_bottom_exp {
+  border-bottom: 1px solid transparent;
+}
+
+@media (min-width:300px) and ( max-width:599px){
+  .text_header_exp{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .text_subheader_exp{
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .text_body_exp{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media (min-width:599px) and ( max-width:760px){
+  .text_header_exp{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .text_subheader_exp{
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .text_body_exp{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media (min-width:761px) and ( max-width:995px){
+  .text_header_exp{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .text_subheader_exp{
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .text_body_exp{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media (min-width:996px) and ( max-width:1200px){
+  .labels_container_exp{
+    padding-top: 13rem;
+  }
+  .label_card_exp{
+    max-width: 21rem;
+    line-height: 3rem;
+  }
+  .text_header_exp{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .text_subheader_exp{
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .text_body_exp{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

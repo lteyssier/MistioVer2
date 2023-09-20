@@ -38,9 +38,13 @@ export function Planet(props) {
         timeline.to("#text_body_list",{filter: "invert(100%)"}, 3.1)
 
         timeline.to("#title_projects",{opacity:"0"},0)
-        screenWidth<811&&timeline.to("#title_projects",{translateY:"24rem"},6.4)
+        screenWidth<810?
+        timeline.to("#title_projects",{translateY:"24rem"},6.4)
+        :screenWidth<900? 
+        timeline.to("#title_projects",{translateY:"24rem",translateX:"-20rem"},6.4)
+        :timeline.to("#title_projects",{translateY:"0rem"},6.4) 
         timeline.to("#title_projects",{opacity:"1",filter:"invert(100%)"},6.4)
-        timeline.to("#title_projects",{translateY:"0rem"},8)
+        timeline.to("#title_projects",{translateY:"0rem", translateX:"0rem"},8)
         
 
         timeline.to( 

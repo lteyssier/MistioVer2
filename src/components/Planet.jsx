@@ -38,7 +38,7 @@ export function Planet(props) {
         timeline.to("#text_body_list",{filter: "invert(100%)"}, 3.1)
 
         timeline.to("#title_projects",{opacity:"0"},0)
-        timeline.to("#title_projects",{opacity:"1",filter:"invert(100%)"},5.4)
+        timeline.to("#title_projects",{opacity:"1",filter:"invert(100%)"},6.4)
         
 
         timeline.to( 

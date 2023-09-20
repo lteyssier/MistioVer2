@@ -16,7 +16,7 @@ export default function Scene() {
         <Canvas className="canvas"  camera={screenWidth>820 ? {position:[0,-180,0]} : {position:[0, -240, 0]}}>
          <Suspense fallback={<CanvasLoader/>}>
             <ambientLight name="ambientLight" className={"ambientLight"} intensity={-0.3} color={0xF5F5F5}/>
-            <ScrollControls pages={7} damping={0.1}>
+            <ScrollControls pages={8} damping={0.1}>
             <Stars/>
             <Airplane/>
             <Planet/>

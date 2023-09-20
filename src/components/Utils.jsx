@@ -50,14 +50,14 @@ export const LoadAnimations = (scene)=> {
            },
         {
          target: document.getElementById("bg_container"),
-          pointTime: 5,
+          pointTime: 6,
           animationsProperties: {
             background: "#404343f9",
           },
         },
         {
             target: document.getElementById("bg_container"),
-             pointTime: 6,
+             pointTime: 7,
              animationsProperties: {
                background: "#222222f8",
              },
@@ -160,7 +160,7 @@ export const LoadAnimations = (scene)=> {
           screenWidth>810?
           {
             target: document.getElementById("FirstJob"),
-            pointTime: 3.1,
+            pointTime: 3.2,
             animationsProperties: {
               opacity: 1,
               left: "25%",
@@ -180,7 +180,7 @@ export const LoadAnimations = (scene)=> {
           screenWidth<811 && 
             {
                 target: document.getElementById("FirstJob"),
-                pointTime: 3.6,
+                pointTime: 3.9,
                 animationsProperties: {
                   opacity: 0,
                   left: "30%",
@@ -191,7 +191,7 @@ export const LoadAnimations = (scene)=> {
           screenWidth>810?
           {
             target: document.getElementById("SecondJob"),
-            pointTime: 3.7,
+            pointTime: 3.9,
             animationsProperties: {
               opacity: 1,
               left: "50%",
@@ -200,7 +200,7 @@ export const LoadAnimations = (scene)=> {
           }:
           {
             target: document.getElementById("SecondJob"),
-            pointTime: 3.7,
+            pointTime: 4,
             animationsProperties: {
               opacity: 1,
               left: "30%",
@@ -210,7 +210,7 @@ export const LoadAnimations = (scene)=> {
           screenWidth<811 && 
           {
               target: document.getElementById("SecondJob"),
-              pointTime: 4.1,
+              pointTime: 4.8,
               animationsProperties: {
                 opacity: 0,
                 left: "30%",
@@ -221,7 +221,7 @@ export const LoadAnimations = (scene)=> {
           screenWidth>810?
           {
             target: document.getElementById("ThirdJob"),
-            pointTime: 4.1,
+            pointTime: 5.1,
             animationsProperties: {
               opacity: 1,
               left: "75%",
@@ -229,7 +229,7 @@ export const LoadAnimations = (scene)=> {
             },
           }:{
             target: document.getElementById("ThirdJob"),
-            pointTime: 4.3,
+            pointTime: 5.1,
             animationsProperties: {
               opacity: 1,
               left: "30%",
@@ -238,7 +238,7 @@ export const LoadAnimations = (scene)=> {
           },
           {
             target: document.getElementById("ExperienceTitle"),
-            pointTime: 4.9,
+            pointTime: 5.9,
             animationsProperties: {
               opacity: 0,
               onUpdate: () => {},
@@ -246,7 +246,7 @@ export const LoadAnimations = (scene)=> {
           },
           {
             target: document.getElementById("FirstJob"),
-            pointTime: 4.9,
+            pointTime: 5.9,
             animationsProperties: {
               opacity: 0,
               onUpdate: () => {},
@@ -254,7 +254,7 @@ export const LoadAnimations = (scene)=> {
           },
           {
             target: document.getElementById("SecondJob"),
-            pointTime: 4.9,
+            pointTime: 5.9,
             animationsProperties: {
               opacity: 0,
               onUpdate: () => {},
@@ -262,7 +262,7 @@ export const LoadAnimations = (scene)=> {
           },
           {
             target: document.getElementById("ThirdJob"),
-            pointTime: 4.9,
+            pointTime: 5.9,
             animationsProperties: {
               opacity: 0,
               onUpdate: () => {},
@@ -270,7 +270,7 @@ export const LoadAnimations = (scene)=> {
           },
           {
             target: document.getElementById("Project"),
-            pointTime: 5.2,
+            pointTime: 6.2,
             animationsProperties: {
               opacity: 1,
               left: "25%",
@@ -280,7 +280,7 @@ export const LoadAnimations = (scene)=> {
           screenWidth>810 &&
           {
             target: document.getElementById("Projects"),
-            pointTime: 5.4,
+            pointTime: 6.4,
             animationsProperties: {
               opacity: 1,
               left: "75%",
@@ -289,7 +289,7 @@ export const LoadAnimations = (scene)=> {
           },
           {
             target: document.getElementById("Project"),
-            pointTime: 6.5,
+            pointTime: 7.5,
             animationsProperties: {
               opacity: 0,
               onUpdate: () => {},
@@ -297,7 +297,7 @@ export const LoadAnimations = (scene)=> {
           },
           {
             target: document.getElementById("Projects"),
-            pointTime: 6.5,
+            pointTime: 7.5,
             animationsProperties: {
               opacity: 0,
               onUpdate: () => {},
@@ -305,7 +305,7 @@ export const LoadAnimations = (scene)=> {
           },
           {
             target: document.getElementById("Contact"),
-            pointTime: 7,
+            pointTime: 8,
             animationsProperties: {
               opacity: 1,
               left: "25%",

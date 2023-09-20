@@ -63,6 +63,13 @@ export const LoadAnimations = (scene)=> {
              },
         },
         {
+            target: document.getElementById("bg_container"),
+             pointTime: 8,
+             animationsProperties: {
+               background: "#141414f8",
+             },
+        },
+        {
             target: document.getElementById("Intro"),
             pointTime: 0,
             animationsProperties: {
@@ -152,8 +159,8 @@ export const LoadAnimations = (scene)=> {
             pointTime: 3.1,
             animationsProperties: {
               opacity: 1,
-              left: "75%",
-              top:"-7rem",
+              left: "55%",
+              top:"-8rem",
               onUpdate: () => {}
           },
           },
@@ -172,7 +179,7 @@ export const LoadAnimations = (scene)=> {
             pointTime: 3.1,
             animationsProperties: {
               opacity: 1,
-              left: "30%",
+              left: "55%",
               onUpdate: () => {},
             },
           }
@@ -203,7 +210,7 @@ export const LoadAnimations = (scene)=> {
             pointTime: 4,
             animationsProperties: {
               opacity: 1,
-              left: "30%",
+              left: "55%",
               onUpdate: () => {},
             },
           },
@@ -232,7 +239,7 @@ export const LoadAnimations = (scene)=> {
             pointTime: 5.1,
             animationsProperties: {
               opacity: 1,
-              left: "30%",
+              left: "55%",
               onUpdate: () => {},
             },
           },

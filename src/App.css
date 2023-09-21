@@ -234,6 +234,7 @@
    .label_card{
     top: 21rem;
    }
+
 }
 
 
@@ -508,5 +509,11 @@
   .text_body_exp{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+}
+
+@media (min-width:1201px) and ( max-width:1400px){
+  .label_card_exp{
+    max-width: 25rem;
   }
 }

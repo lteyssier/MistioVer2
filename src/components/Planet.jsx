@@ -5,6 +5,7 @@ import gsap, { Power4 } from "gsap";
 import { useFrame, useThree } from "@react-three/fiber";
 import { useLayoutEffect } from "react";
 import { useGLTF, useScroll } from "@react-three/drei";
+import { lerp } from "three/src/math/MathUtils";
 
 export function Planet(props) {
     const colorsMaterial = {
@@ -73,14 +74,14 @@ export function Planet(props) {
             {
                 y: -Math.PI*1.6
             },
-            5
+            6
             );
         timeline.to( 
             planetGroup.rotation, 
             {
                 y: -Math.PI*2
             },
-            6.8
+            7.8
             )
             
         animations.map((animation) => {
@@ -95,7 +96,13 @@ export function Planet(props) {
     },[])
 
     useFrame(() => {
-        timeline.seek(scroll.offset * timeline.duration())
+        //timeline.seek(scroll.offset * timeline.duration())
+        if(timeline){
+            const targetValue = scroll.offset
+            const currentValue = timeline.duration() * scroll.offset
+            const interpolatedValue = lerp(currentValue, targetValue, 0.05)
+            timeline.seek(interpolatedValue)
+        }
     })
 
   return (

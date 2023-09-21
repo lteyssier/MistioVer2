@@ -143,7 +143,7 @@ export const LoadAnimations = (scene)=> {
               onUpdate: () => {},
             },
           },
-          screenWidth>810?
+          screenWidth>995?
           {
             target: document.getElementById("ExperienceTitle"),
             pointTime: 3.1,
@@ -164,7 +164,7 @@ export const LoadAnimations = (scene)=> {
               onUpdate: () => {}
           },
           },
-          screenWidth>810?
+          screenWidth>995?
           {
             target: document.getElementById("FirstJob"),
             pointTime: 3.2,
@@ -184,7 +184,7 @@ export const LoadAnimations = (scene)=> {
             },
           }
           ,
-          screenWidth<811 && 
+          screenWidth<996 && 
             {
                 target: document.getElementById("FirstJob"),
                 pointTime: 3.9,
@@ -195,7 +195,7 @@ export const LoadAnimations = (scene)=> {
                 },
             }
           ,
-          screenWidth>810?
+          screenWidth>995?
           {
             target: document.getElementById("SecondJob"),
             pointTime: 3.9,
@@ -214,7 +214,7 @@ export const LoadAnimations = (scene)=> {
               onUpdate: () => {},
             },
           },
-          screenWidth<811 && 
+          screenWidth<996 && 
           {
               target: document.getElementById("SecondJob"),
               pointTime: 4.8,
@@ -225,7 +225,7 @@ export const LoadAnimations = (scene)=> {
               },
           }
         ,
-          screenWidth>810?
+          screenWidth>995?
           {
             target: document.getElementById("ThirdJob"),
             pointTime: 5.1,
@@ -284,7 +284,7 @@ export const LoadAnimations = (scene)=> {
               onUpdate: () => {},
             },
           },
-          screenWidth>810 &&
+          screenWidth>995 &&
           {
             target: document.getElementById("Projects"),
             pointTime: 6.4,

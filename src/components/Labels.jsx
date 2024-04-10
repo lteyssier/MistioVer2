@@ -28,15 +28,15 @@ export default function Label() {
         points: [" "," ", " "," ", " ", " "," ", " "," "," "," ", " "," "," "],
         links:[""]
       },
-      {
-        id: "Projects",
-        title: "",
-        subheader: "",
-        description: ``,
-        ml: "My projects",
-        points: ["Café Perdido","< React, Tailwind >", "Mueblerías Navarro","< Remix run, Strapi >", "Crea tu mapa", "< JS, D3 >", " "," "," "," ", " "," "," ", " "," "," "," ", " "," "," "],
-        links:["https://cafeperdido.com/","https://github.com/lteyssier/MueblesNavarro", "https://affectionate-kilby-0890a8.netlify.app/"]
-      },
+      // {
+      //   id: "Projects",
+      //   title: "",
+      //   subheader: "",
+      //   description: ``,
+      //   ml: "My projects",
+      //   points: ["Café Perdido","< React, Tailwind >", "Mueblerías Navarro","< Remix run, Strapi >", "Crea tu mapa", "< JS, D3 >", " "," "," "," ", " "," "," ", " "," "," "," ", " "," "," "],
+      //   links:["https://cafeperdido.com/","https://github.com/lteyssier/MueblesNavarro", "https://affectionate-kilby-0890a8.netlify.app/"]
+      // },
       {
         id: "Contact",
         title: "Contact",

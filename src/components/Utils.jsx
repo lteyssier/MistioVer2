@@ -276,11 +276,60 @@ export const LoadAnimations = (scene)=> {
             },
           },
           {
+            target: scene.getObjectByName("PlanetGroup").position,
+            pointTime: 6.0,
+            animationsProperties:{
+              z:110,
+              onUpdate: ()=>{}
+            }
+          },
+          {
+            target: scene.getObjectByName("AirplaneGroup").position,
+            pointTime: 7.0,
+            animationsProperties:{
+              z:210,
+              onUpdate: ()=>{}
+            }
+          },
+          {
+            target: scene.getObjectByName("AirplaneGroup").position,
+            pointTime: 8.0,
+            animationsProperties:{
+              z:210,
+              onUpdate: ()=>{}
+            }
+          },
+          {
+            target: scene.getObjectByName("AirplaneGroup").position,
+            pointTime: 9.0,
+            animationsProperties:{
+              z:0,
+              onUpdate: ()=>{}
+            }
+          },
+          {
+            target: scene.getObjectByName("AirplaneGroup").position,
+            pointTime: 10.0,
+            animationsProperties:{
+              z:0,
+              onUpdate: ()=>{}
+            }
+          },
+          {
+            target: scene.getObjectByName("AirplaneGroup").position,
+            pointTime: 11.0,
+            animationsProperties:{
+              z:0,
+              onUpdate: ()=>{}
+            }
+          },
+          {
             target: document.getElementById("Project"),
             pointTime: 6.2,
             animationsProperties: {
               opacity: 1,
-              left: "25%",
+              left: "50%",
+              top:"60%",
               onUpdate: () => {},
             },
           },
@@ -296,7 +345,7 @@ export const LoadAnimations = (scene)=> {
           },
           {
             target: document.getElementById("Project"),
-            pointTime: 7.5,
+            pointTime: 7,
             animationsProperties: {
               opacity: 0,
               onUpdate: () => {},
@@ -312,10 +361,11 @@ export const LoadAnimations = (scene)=> {
           },
           {
             target: document.getElementById("Contact"),
-            pointTime: 8,
+            pointTime: 9,
             animationsProperties: {
               opacity: 1,
-              left: "25%",
+              left: "40%",
+              top:"70%",
               onUpdate: () => {},
             },
           },
@@ -323,10 +373,9 @@ export const LoadAnimations = (scene)=> {
             target: scene.getObjectByName("GroupStars"),
             pointTime: 0,
             animationsProperties: {
-              
               onUpdate: () => {},
             },
-          }
+          },
     ]
     return Animations
 }

@@ -28,7 +28,7 @@ export function Planet(props) {
         const animations  = LoadAnimations(scene, cristalMaterial,oneMaterial,colorsMaterial)
        
         timeline.to("#titles",{color:"#333333"},0)
-        timeline.to("#titles",{color:"#333333"},1)
+        timeline.to("#titles",{color:"#333333"},0.5)
         timeline.to("#titles",{color:"#333333"},2)
         timeline.to("#titles",{filter: "invert(100%)"},3)
         timeline.to("#titles",{color: "invert(100%)"},4)
@@ -38,22 +38,67 @@ export function Planet(props) {
         timeline.to("#text_body",{filter: "invert(100%)"}, 3.1)
         timeline.to("#text_body_list",{filter: "invert(100%)"}, 3.1)
 
-        timeline.to("#title_projects",{opacity:"0"},0)
+        timeline.to("#title_projects1",{opacity:"0"},0)
+        timeline.to("#title_projects1",{translateY:"-4rem", translateX:"4rem"},0)
         screenWidth<810?
-        timeline.to("#title_projects",{translateY:"22rem"},6.4)
+        timeline.to("#title_projects1",{translateY:"14rem",translateX:"-12rem"},7)
         :screenWidth<995? 
-        timeline.to("#title_projects",{translateY:"22rem",translateX:"-20rem"},6.4)
-        :timeline.to("#title_projects",{translateY:"0rem"},6.4) 
-        timeline.to("#title_projects",{opacity:"1",filter:"invert(100%)"},6.4)
-        timeline.to("#title_projects",{translateY:"0rem", translateX:"0rem"},8)
-        
+        timeline.to("#title_projects1",{translateY:"14rem",translateX:"-12rem"},7)
+        :timeline.to("#title_projects1",{translateY:"14rem",translateX:"-12rem"},7) 
+        timeline.to("#title_projects1",{opacity:"1",filter:"invert(100%)"},7)
+
+        timeline.to("#title_projects2",{opacity:"0"},0)
+        timeline.to("#title_projects2",{translateY:"-4rem", translateX:"4rem"},0)
+        screenWidth<810?
+        timeline.to("#title_projects2",{translateY:"34rem",translateX:"-36rem"},7)
+        :screenWidth<995? 
+        timeline.to("#title_projects2",{translateY:"34rem",translateX:"-36rem"},7)
+        :timeline.to("#title_projects2",{translateY:"34rem",translateX:"-36rem"},7) 
+        timeline.to("#title_projects2",{opacity:"1",filter:"invert(100%)"},7)
+
+        timeline.to("#title_projects3",{opacity:"0"},0)
+        timeline.to("#title_projects3",{translateY:"-4rem", translateX:"4rem"},0)
+        screenWidth<810?
+        timeline.to("#title_projects3",{translateY:"34rem",translateX:"-12rem"},7)
+        :screenWidth<995? 
+        timeline.to("#title_projects3",{translateY:"34rem",translateX:"-12rem"},7)
+        :timeline.to("#title_projects3",{translateY:"34rem",translateX:"-12rem"},7) 
+        timeline.to("#title_projects3",{opacity:"1",filter:"invert(100%)"},7)
+
+        timeline.to("#title_projects4",{opacity:"0"},0)
+        timeline.to("#title_projects4",{translateY:"-4rem", translateX:"4rem"},0)
+        screenWidth<810?
+        timeline.to("#title_projects4",{translateY:"14rem",translateX:"12rem"},7)
+        :screenWidth<995? 
+        timeline.to("#title_projects4",{translateY:"14rem",translateX:"12rem"},7)
+        :timeline.to("#title_projects4",{translateY:"14rem",translateX:"12rem"},7) 
+        timeline.to("#title_projects4",{opacity:"1",filter:"invert(100%)"},7)
+
+        timeline.to("#title_projects5",{opacity:"0"},0)
+        timeline.to("#title_projects5",{translateY:"-4rem", translateX:"4rem"},0)
+        screenWidth<810?
+        timeline.to("#title_projects5",{translateY:"34rem",translateX:"12rem"},7)
+        :screenWidth<995? 
+        timeline.to("#title_projects5",{translateY:"34rem",translateX:"12rem"},7)
+        :timeline.to("#title_projects5",{translateY:"34rem",translateX:"12rem"},7) 
+        timeline.to("#title_projects5",{opacity:"1",filter:"invert(100%)"},7)
+
+        timeline.to("#title_projects6",{opacity:"0"},0)
+        timeline.to("#title_projects6",{translateY:"-4rem", translateX:"4rem"},0)
+        screenWidth<810?
+        timeline.to("#title_projects6",{translateY:"14rem",translateX:"-36rem"},7)
+        :screenWidth<995? 
+        timeline.to("#title_projects6",{translateY:"14rem",translateX:"-36rem"},7)
+        :timeline.to("#title_projects6",{translateY:"14rem",translateX:"-36rem"},7) 
+        timeline.to("#title_projects6",{opacity:"1",filter:"invert(100%)"},7)
+
 
         timeline.to( 
         planetGroup.rotation, 
             {
                 y: -Math.PI*0.4
             },
-            1
+            0.5
             );
         timeline.to( 
             planetGroup.rotation, 
@@ -72,7 +117,7 @@ export function Planet(props) {
         timeline.to( 
             planetGroup.rotation, 
             {
-                y: -Math.PI*1.6
+                y: -Math.PI*1.6,
             },
             6
             );
@@ -80,8 +125,9 @@ export function Planet(props) {
             planetGroup.rotation, 
             {
                 y: -Math.PI*2
+                
             },
-            7.8
+            9
             )
             
         animations.map((animation) => {

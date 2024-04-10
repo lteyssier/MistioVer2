@@ -24,7 +24,7 @@ export function Airplane(props) {
   })
 
   return (
-    <group ref={planeRef} name="AirplaneGruop"  {...props} dispose={null}  position={ [-30,80,40]}>
+    <group ref={planeRef} name="AirplaneGroup"  {...props} dispose={null} >
       <group rotation={[1, 0, 0]}>
         <mesh
           castShadow

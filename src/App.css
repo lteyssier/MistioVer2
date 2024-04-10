@@ -62,7 +62,82 @@
   z-index: 1;
 }
 
-.title_projects{
+.title_projects1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 1rem;
+  gap: 1rem;
+  margin-left: 60%;
+  font-family: "Roboto Slab";
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  color: #333333;
+  z-index: 999;
+  opacity: 0;
+ }
+.title_projects2{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 1rem;
+  gap: 1rem;
+  margin-left: 60%;
+  font-family: "Roboto Slab";
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  color: #333333;
+  z-index: 999;
+  opacity: 0;
+ }
+.title_projects3{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 1rem;
+  gap: 1rem;
+  margin-left: 60%;
+  font-family: "Roboto Slab";
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  color: #333333;
+  z-index: 999;
+  opacity: 0;
+ }
+.title_projects4{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 1rem;
+  gap: 1rem;
+  margin-left: 60%;
+  font-family: "Roboto Slab";
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  color: #333333;
+  z-index: 999;
+  opacity: 0;
+ }
+.title_projects5{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 1rem;
+  gap: 1rem;
+  margin-left: 60%;
+  font-family: "Roboto Slab";
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  color: #333333;
+  z-index: 999;
+  opacity: 0;
+ }
+.title_projects6{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -86,7 +161,7 @@
  }
 
  .github_logo_p{
-  width: 2rem;
+  width: 4rem;
   margin-left: 1rem;
   padding-top: .03rem;
 }
@@ -516,4 +591,14 @@
   .label_card_exp{
     max-width: 25rem;
   }
+}
+
+.htmlScreen iframe{
+  width: 400px;
+  height: 600px;
+
+}
+
+.framePage iframe{
+  position: absolute;
 }
